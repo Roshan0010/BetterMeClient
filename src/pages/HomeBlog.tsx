@@ -4,7 +4,7 @@ const HomeBlog = () => {
     const navigate=useNavigate();
   return (
     <div>
-        <button onClick={()=>navigate('/login')}>
+        <button onClick={()=>navigate('/login')} className='bg-white'>
             get started
         </button>
     </div>
