@@ -128,7 +128,7 @@ const LoginForm=()=>{
 
 
 return (
-    <div className=' min-h-[100vh] m-10 p-10 xs flex flex-col items-center  gap-6'>
+    <div className=' min-h-[100vh] xs:m-0 xs:p-0 lg:m-10 lg:p-10 flex flex-col items-center  gap-6'>
        <img src={Logo} className='w-[300px] h-[180px] '/>
 
        <input className='w-[80%] rounded-md h-12 bg-[#0C2D48] text-white pl-4' placeholder="Email" name='email' onChange={changeFormData}></input>
