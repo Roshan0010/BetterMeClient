@@ -19,28 +19,23 @@ on the basic of theme make a page to upload photos and vedio and restric as well
 check what you want to send as data for navigation routes if date need to change the whole pattere from / to - or . see and do it 
 
 
-
-
-
-
-
-//do it fast:
-1.testing via original account
-2.logout feature with login bar visiblity
-4. token verification funtion creation and funtion call before all operation
-5.sync
-
-
-
-
-update done with major funtionality next:
+#done
 1. resonsivness
-2. think or updating user table where a array of date and id of face and body is given
-so that we are not searching and getitng data  if needed se for relationship 
 3. testing on daily bases also token verification and and someting about done variable
 also start your jorney from tomorow
 copy paste body transform with appropriate env and give a prod build
 
+
+
+//do it fast:
+1. sync
+2. testing via original account ( in process)
+3. logout feature with login bar visiblity
+4. token verification funtion creation and funtion call before all operation
+
+update done with major funtionality next:
+2. think or updating user table where a array of date and id of face and body is given
+so that we are not searching and getitng data  if needed se for relationship 
 also thik of implementing flashy reload and sync all for smother experice
 down the line think of optamization
 
