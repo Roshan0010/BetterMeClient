@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+    --bg-color: #020913;
+  }
+  body {
+    background-color: var(--bg-color);
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
