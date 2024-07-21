@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Outlet } from 'react-router-dom';
 
 // Import your page components
 import Login from './pages/Login';
@@ -8,26 +8,25 @@ import TransformRedirect from './pages/TransformRedirect';
 import JorneyViewEditPage from './pages/JorneyViewEditPage';
 import Header from './components/Header';
 
-function App() {
-  // const testing: string = useRecoilValue(test);
-  // console.log(testing);
+// Layout component that includes the Header
+const Layout: React.FC = () => (
+  <div>
+    <Header />
+    <Outlet />
+  </div>
+);
 
+const App: React.FC = () => {
   return (
-    <div>
-      <Header/>
-      <Routes>
-           
-           <Route path='/' element={<Redirect/>}></Route>
-           <Route path="/login" element={<Login />} />
-          <Route path='/dashboard/:transform' element={<TransformRedirect/>}/>
-          <Route path='/journey/:transform/:date' element={<JorneyViewEditPage/>}/>
-         </Routes>
-    </div>
-       
-  )
+    <Routes>
+      <Route path="/" element={<Redirect />} />
+      <Route path="/login" element={<Login />} />
+      <Route element={<Layout />}>
+        <Route path="/dashboard/:transform" element={<TransformRedirect />} />
+        <Route path="/journey/:transform/:date" element={<JorneyViewEditPage />} />
+      </Route>
+    </Routes>
+  ); 
 }
 
 export default App;
-
-
-//register
